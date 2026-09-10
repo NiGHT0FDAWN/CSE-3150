@@ -3,6 +3,12 @@
 /* note: triangle edge length must be positive (larger than 0) and sum of two sides is strictly larger than the third side */
 int ECTestTriangle(int a, int b, int c)
 {
-  // your code here
+  if(a<1 || b<1 || c<1) {
+    return -1;
+  }
+  if (a<b+c && b<a+c && c<a+b) {
+    return 0;
+  }
+  return -1;
 }
 

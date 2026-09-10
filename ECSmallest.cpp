@@ -5,4 +5,17 @@ int ECSmallest(int *arrOfInts, int szArr)
   // arrOfInts: pointer to the array of integers
   // szArr: number of elements in the array
   // your code here
+  if (szArr==0) {
+    return 0;
+  }
+  if (szArr==1) {
+    return arrOfInts[0];
+  }
+  int smallest = 99999;
+  for (int i=0; i<szArr; i++) {
+    if (arrOfInts[i] < smallest) {
+      smallest = arrOfInts[i];
+    }
+  }
+  return smallest;
 }
