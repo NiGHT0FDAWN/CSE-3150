@@ -11,7 +11,7 @@ int ECSmallest(int *arrOfInts, int szArr)
   if (szArr==1) {
     return arrOfInts[0];
   }
-  int smallest = 99999;
+  int smallest = arrOfInts[0];
   for (int i=0; i<szArr; i++) {
     if (arrOfInts[i] < smallest) {
       smallest = arrOfInts[i];
